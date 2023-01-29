@@ -4,11 +4,10 @@ O objetivo é registrar boa parte das anotações e práticas ao longo do curso.
 
 
 ### Ferramentas Utilizadas: 
+  Ubuntu 22.04.1 LTS
 
-Ubuntu 22.04.1 LTS
+  Rstudio (IDE)
 
-Rstudio (IDE)
+  R (Linguagem de Programação) | Markdown | HTML
 
-R (Linguagem de Programação) | Markdown | HTML
-
-Git e GitHub (Control Version)
+  Git e GitHub (Control Version)
