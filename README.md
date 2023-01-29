@@ -1,9 +1,9 @@
 # Harvardx Ciência de Dados: R basics
 
-Registrar boa parte das anotações e práticas ao longo do curso.
+O objetivo é registrar boa parte das anotações e práticas ao longo do curso.
 
 
-### Ferramentas Utilizadas 
+### Ferramentas Utilizadas: 
 
 Ubuntu 22.04.1 LTS
 
