@@ -1,0 +1,39 @@
+---
+title: "Data Types - Introduction Data Sciense"
+output: html_notebook
+---
+
+2.4 Data Types - Variáveis em R podem ser de tipos diferentes. Então, é prciso distinguir os tipos. Assim, utilizando por exemplo a função class() para determinar o tipo de objeto.
+```{r}
+verify_types <- function() {
+  a <- 1
+  b <- 0.4
+  c <- TRUE
+  d <- "Hello World!"
+  t1 = class(a)
+  t2 = class(b)
+  t3 = class(c)
+  t4 = class(d)
+  print(c(t1, t2, t3, t4))
+}
+verify_types()
+```
+
+2.4.1 Quadro de Dados/Data Frames - Utilizado para armazenar um conjunto de dados em R.
+```{r}
+#Instalando a biblioteca DSLABS
+install.packages("dslabs")
+#Carregando o Pacote MURDERS
+library(dslabs)
+data(murders)
+class(murders)
+```
+
+2.4.2 Examinar um objeto - É útil a função str("nome") para entender a estrutura do objeto.
+```{r}
+exam_murders <- function() {
+  str(murders)
+}
+exam_murders()
+```
+
