@@ -1757,12 +1757,13 @@ display: none;
 class() para determinar o tipo de objeto.</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudmVyaWZ5X3R5cGVzIDwtIGZ1bmN0aW9uKCkge1xuICBhIDwtIDFcbiAgYiA8LSAwLjRcbiAgYyA8LSBUUlVFXG4gIGQgPC0gXCJIZWxsbyBXb3JsZCFcIlxuICB0MSA9IGNsYXNzKGEpXG4gIHQyID0gY2xhc3MoYilcbiAgdDMgPSBjbGFzcyhjKVxuICB0NCA9IGNsYXNzKGQpXG4gIHByaW50KGModDEsIHQyLCB0MywgdDQpKVxufVxudmVyaWZ5X3R5cGVzKClcbmBgYCJ9 -->
-<pre class="r"><code>verify_types &lt;- function() {
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxudmVyaWZ5X3R5cGVzIDwtIGZ1bmN0aW9uKCkge1xuICBhIDwtIDFcbiAgYiA8LSAwLjRcbiAgYyA8LSBUUlVFXG4gIGQgPC0gXFxIZWxsbyBXb3JsZCFcXFxuICB0MSA9IGNsYXNzKGEpXG4gIHQyID0gY2xhc3MoYilcbiAgdDMgPSBjbGFzcyhjKVxuICB0NCA9IGNsYXNzKGQpXG4gIHByaW50KGModDEsIHQyLCB0MywgdDQpKVxufVxudmVyaWZ5X3R5cGVzKClcbmBgYFxuYGBgIn0= -->
+<pre class="r"><code>```r
+verify_types &lt;- function() {
   a &lt;- 1
   b &lt;- 0.4
   c &lt;- TRUE
-  d &lt;- &quot;Hello World!&quot;
+  d &lt;- \Hello World!\
   t1 = class(a)
   t2 = class(b)
   t3 = class(c)
@@ -1770,79 +1771,198 @@ class() para determinar o tipo de objeto.</p>
   print(c(t1, t2, t3, t4))
 }
 verify_types()</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwibnVtZXJpY1wiICAgXCJudW1lcmljXCIgICBcImxvZ2ljYWxcIiAgXG5bNF0gXCJjaGFyYWN0ZXJcIlxuIn0= -->
-<pre><code>[1] &quot;numeric&quot;   &quot;numeric&quot;   &quot;logical&quot;  
-[4] &quot;character&quot;</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<p>2.4.1 Quadro de Dados/Data Frames - Utilizado para armazenar um
-conjunto de dados em R.</p>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY2xhc3MobXVyZGVycylcblxuYGBgIn0= -->
-<pre class="r"><code>class(murders)
+<pre><code>
+&lt;!-- rnb-source-end --&gt;
+
+&lt;!-- rnb-output-begin eyJkYXRhIjoiWzFdIFxcbnVtZXJpY1xcICAgXFxudW1lcmljXFwgICBcXGxvZ2ljYWxcXCAgXG5bNF0gXFxjaGFyYWN0ZXJcXFxuIn0= --&gt;
 </code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiZGF0YS5mcmFtZVwiXG4ifQ== -->
-<pre><code>[1] &quot;data.frame&quot;</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<p>2.4.2 Examinar um objeto - É útil a função str(“nome”) para entender
-a estrutura do objeto.</p>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZXhhbV9tdXJkZXJzIDwtIGZ1bmN0aW9uKCkge1xuICBzdHIobXVyZGVycylcbn1cbmV4YW1fbXVyZGVycygpXG5gYGAifQ== -->
-<pre class="r"><code>exam_murders &lt;- function() {
+<p>[1]       [4] <br />
+</p>
+<pre><code>
+
+
+&lt;!-- rnb-output-end --&gt;
+
+&lt;!-- rnb-chunk-end --&gt;
+
+
+&lt;!-- rnb-text-begin --&gt;
+
+
+2.4.1 Quadro de Dados/Data Frames - Utilizado para armazenar um conjunto de dados em R.
+
+&lt;!-- rnb-text-end --&gt;
+
+
+&lt;!-- rnb-chunk-begin --&gt;
+
+
+&lt;!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuY2xhc3MobXVyZGVycylcblxuYGBgXG5gYGAifQ== --&gt;
+
+```r
+```r
+class(murders)
+</code></pre>
+<pre><code>
+&lt;!-- rnb-source-end --&gt;
+
+&lt;!-- rnb-output-begin eyJkYXRhIjoiWzFdIFxcZGF0YS5mcmFtZVxcXG4ifQ== --&gt;
+</code></pre>
+<p>[1] .frame<br />
+</p>
+<pre><code>
+
+
+&lt;!-- rnb-output-end --&gt;
+
+&lt;!-- rnb-chunk-end --&gt;
+
+
+&lt;!-- rnb-text-begin --&gt;
+
+
+2.4.2 Examinar um objeto - É útil a função str(&quot;nome&quot;) para entender a estrutura do objeto.
+
+&lt;!-- rnb-text-end --&gt;
+
+
+&lt;!-- rnb-chunk-begin --&gt;
+
+
+&lt;!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuZXhhbV9tdXJkZXJzIDwtIGZ1bmN0aW9uKCkge1xuICBzdHIobXVyZGVycylcbn1cbmV4YW1fbXVyZGVycygpXG5gYGBcbmBgYCJ9 --&gt;
+
+```r
+```r
+exam_murders &lt;- function() {
   str(murders)
 }
 exam_murders()</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiJ2RhdGEuZnJhbWUnOlx0NTEgb2JzLiBvZiAgNSB2YXJpYWJsZXM6XG4gJCBzdGF0ZSAgICAgOiBjaHIgIFwiQWxhYmFtYVwiIFwiQWxhc2thXCIgXCJBcml6b25hXCIgXCJBcmthbnNhc1wiIC4uLlxuICQgYWJiICAgICAgIDogY2hyICBcIkFMXCIgXCJBS1wiIFwiQVpcIiBcIkFSXCIgLi4uXG4gJCByZWdpb24gICAgOiBGYWN0b3Igdy8gNCBsZXZlbHMgXCJOb3J0aGVhc3RcIixcIlNvdXRoXCIsLi46IDIgNCA0IDIgNCA0IDEgMiAyIDIgLi4uXG4gJCBwb3B1bGF0aW9uOiBudW0gIDQ3Nzk3MzYgNzEwMjMxIDYzOTIwMTcgMjkxNTkxOCAzNzI1Mzk1NiAuLi5cbiAkIHRvdGFsICAgICA6IG51bSAgMTM1IDE5IDIzMiA5MyAxMjU3IC4uLlxuIn0= -->
-<pre><code>&#39;data.frame&#39;:   51 obs. of  5 variables:
- $ state     : chr  &quot;Alabama&quot; &quot;Alaska&quot; &quot;Arizona&quot; &quot;Arkansas&quot; ...
- $ abb       : chr  &quot;AL&quot; &quot;AK&quot; &quot;AZ&quot; &quot;AR&quot; ...
- $ region    : Factor w/ 4 levels &quot;Northeast&quot;,&quot;South&quot;,..: 2 4 4 2 4 4 1 2 2 2 ...
- $ population: num  4779736 710231 6392017 2915918 37253956 ...
- $ total     : num  135 19 232 93 1257 ...</code></pre>
-<!-- rnb-output-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-<p>2.4.3 The accessor/O acessor - Ao longo das análises é preciso
-acessar as variáveis no data frame. Então, é utilizado o “$”. Por
-exemplo:</p>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuICAjQ29tbyBpZGVudGlmaWNhciBhcyB2YXJpw6F2ZWlzPyBQYXJhIGlzc28sIMOpIHByZWNpc28gICB1c2FyIGEgZnVuw6fDo28gTkFNRVMoTk9NRV9ET19EQVRBRlJBTUUpXG4gIG5hbWVzKG11cmRlcnMpXG5cbmBgYCJ9 -->
-<pre class="r"><code>  #Como identificar as variáveis? Para isso, é preciso   usar a função NAMES(NOME_DO_DATAFRAME)
+<pre><code>
+&lt;!-- rnb-source-end --&gt;
+
+&lt;!-- rnb-output-begin eyJkYXRhIjoiJ2RhdGEuZnJhbWUnOlx0NTEgb2JzLiBvZiAgNSB2YXJpYWJsZXM6XG4gJCBzdGF0ZSAgICAgOiBjaHIgIFxcQWxhYmFtYVxcIFxcQWxhc2thXFwgXFxBcml6b25hXFwgXFxBcmthbnNhc1xcIC4uLlxuICQgYWJiICAgICAgIDogY2hyICBcXEFMXFwgXFxBS1xcIFxcQVpcXCBcXEFSXFwgLi4uXG4gJCByZWdpb24gICAgOiBGYWN0b3Igdy8gNCBsZXZlbHMgXFxOb3J0aGVhc3RcXCxcXFNvdXRoXFwsLi46IDIgNCA0IDIgNCA0IDEgMiAyIDIgLi4uXG4gJCBwb3B1bGF0aW9uOiBudW0gIDQ3Nzk3MzYgNzEwMjMxIDYzOTIwMTcgMjkxNTkxOCAzNzI1Mzk1NiAuLi5cbiAkIHRvdGFsICAgICA6IG51bSAgMTM1IDE5IDIzMiA5MyAxMjU3IC4uLlxuIn0= --&gt;
+</code></pre>
+<p>‘data.frame’: 51 obs. of 5 variables: $ state : chr     … $ abb : chr
+    … $ region : Factor w/ 4 levels ,,..: 2 4 4 2 4 4 1 2 2 2 … $
+population: num 4779736 710231 6392017 2915918 37253956 … $ total : num
+135 19 232 93 1257 …</p>
+<pre><code>
+
+
+&lt;!-- rnb-output-end --&gt;
+
+&lt;!-- rnb-chunk-end --&gt;
+
+
+&lt;!-- rnb-text-begin --&gt;
+
+
+2.4.3 The accessor/O acessor  - Ao longo das análises é preciso acessar as variáveis no data frame. Então, é utilizado o &quot;$&quot;. Por exemplo:
+
+&lt;!-- rnb-text-end --&gt;
+
+
+&lt;!-- rnb-chunk-begin --&gt;
+
+
+&lt;!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuICAjQ29tbyBpZGVudGlmaWNhciBhcyB2YXJpw6F2ZWlzPyBQYXJhIGlzc28sIMOpIHByZWNpc28gICB1c2FyIGEgZnVuw6fDo28gTkFNRVMoTk9NRV9ET19EQVRBRlJBTUUpXG4gIG5hbWVzKG11cmRlcnMpXG5cbmBgYFxuYGBgIn0= --&gt;
+
+```r
+```r
+  #Como identificar as variáveis? Para isso, é preciso   usar a função NAMES(NOME_DO_DATAFRAME)
   names(murders)
 </code></pre>
+<pre><code>
+&lt;!-- rnb-source-end --&gt;
+
+&lt;!-- rnb-output-begin eyJkYXRhIjoiWzFdIFxcc3RhdGVcXCAgICAgIFxcYWJiXFwgICAgICAgIFxccmVnaW9uXFwgICAgXG5bNF0gXFxwb3B1bGF0aW9uXFwgXFx0b3RhbFxcICAgICBcbiJ9 --&gt;
+</code></pre>
+<p>[1]      <br />
+[4]   </p>
+<pre><code>
+
+
+&lt;!-- rnb-output-end --&gt;
+
+&lt;!-- rnb-chunk-end --&gt;
+
+
+&lt;!-- rnb-text-begin --&gt;
+
+ 
+2.4.4 Vetores: numéricos, caracteres e lógicos - Os vetores armazenam diversos valores simultâneamente.
+Por isso, esses tipos de objetos são chamados de vetores.
+
+É possível identificar a quantidade de entradas de valores que um vetor possui. Por exemplo:
+
+&lt;!-- rnb-text-end --&gt;
+
+
+&lt;!-- rnb-chunk-begin --&gt;
+
+
+&lt;!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxucHJpbnQoeClcblxuYGBgXG5gYGAifQ== --&gt;
+
+```r
+```r
+print(x)
+</code></pre>
+<pre><code>
+&lt;!-- rnb-source-end --&gt;
+
+&lt;!-- rnb-output-begin eyJkYXRhIjoiWzFdIEZBTFNFXG4ifQ== --&gt;
+</code></pre>
+<p>[1] FALSE</p>
+<pre><code>
+
+
+&lt;!-- rnb-output-end --&gt;
+
+&lt;!-- rnb-chunk-end --&gt;
+
+
+&lt;!-- rnb-text-begin --&gt;
+
+
+2.4.5 Fatores - São úteis para armazenar dados categóricos. Pro exemplo:
+
+&lt;!-- rnb-text-end --&gt;
+
+
+&lt;!-- rnb-chunk-begin --&gt;
+
+
+&lt;!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucmVnaW9uIDwtIG11cmRlcnMkcmVnaW9uXG52YWx1ZSA8LSBtdXJkZXJzJHRvdGFsXG5yZWdpb24gPC0gcmVvcmRlcihyZWdpb24sIHZhbHVlLCBGVU4gPSBzdW0pXG5sZXZlbHMocmVnaW9uKVxuYGBgIn0= --&gt;
+
+```r
+region &lt;- murders$region
+value &lt;- murders$total
+region &lt;- reorder(region, value, FUN = sum)
+levels(region)</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwic3RhdGVcIiAgICAgIFwiYWJiXCIgICAgICAgIFwicmVnaW9uXCIgICAgXG5bNF0gXCJwb3B1bGF0aW9uXCIgXCJ0b3RhbFwiICAgICBcbiJ9 -->
-<pre><code>[1] &quot;state&quot;      &quot;abb&quot;        &quot;region&quot;    
-[4] &quot;population&quot; &quot;total&quot;     </code></pre>
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiTm9ydGhlYXN0XCIgICAgIFwiTm9ydGggQ2VudHJhbFwiIFwiV2VzdFwiICAgICAgICAgXG5bNF0gXCJTb3V0aFwiICAgICAgICBcbiJ9 -->
+<pre><code>[1] &quot;Northeast&quot;     &quot;North Central&quot; &quot;West&quot;         
+[4] &quot;South&quot;        </code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
-<p>2.4.4 Vetores: numéricos, caracteres e lógicos - Os vetores armazenam
-diversos valores simultâneamente. Por isso, esses tipos de objetos são
-chamados de vetores.</p>
-<p>É possível identificar a quantidade de entradas de valores que um
-vetor possui. Por exemplo:</p>
+<p>2.4.6 Listas/Lists - Os quadros de dados são um caso especial de
+listas. As listas são úteis porque pode armazenar qualquer combinação de
+diferentes tipos.</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucHJpbnQoeClcblxuYGBgIn0= -->
-<pre class="r"><code>print(x)
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucmckbmFtZVxuXG5gYGAifQ== -->
+<pre class="r"><code>rg$name
 </code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiWzFdIEZBTFNFXG4ifQ== -->
-<pre><code>[1] FALSE</code></pre>
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwiU291bHNcIlxuIn0= -->
+<pre><code>[1] &quot;Souls&quot;</code></pre>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiRGF0YSBUeXBlcyAtIEludHJvZHVjdGlvbiBEYXRhIFNjaWVuc2UiCm91dHB1dDogaHRtbF9ub3RlYm9vawotLS0KCjIuNCBEYXRhIFR5cGVzIC0gVmFyacOhdmVpcyBlbSBSIHBvZGVtIHNlciBkZSB0aXBvcyBkaWZlcmVudGVzLiBFbnTDo28sIMOpIHByY2lzbyBkaXN0aW5ndWlyIG9zIHRpcG9zLiBBc3NpbSwgdXRpbGl6YW5kbyBwb3IgZXhlbXBsbyBhIGZ1bsOnw6NvIGNsYXNzKCkgcGFyYSBkZXRlcm1pbmFyIG8gdGlwbyBkZSBvYmpldG8uCmBgYHtyfQp2ZXJpZnlfdHlwZXMgPC0gZnVuY3Rpb24oKSB7CiAgYSA8LSAxCiAgYiA8LSAwLjQKICBjIDwtIFRSVUUKICBkIDwtICJIZWxsbyBXb3JsZCEiCiAgdDEgPSBjbGFzcyhhKQogIHQyID0gY2xhc3MoYikKICB0MyA9IGNsYXNzKGMpCiAgdDQgPSBjbGFzcyhkKQogIHByaW50KGModDEsIHQyLCB0MywgdDQpKQp9CnZlcmlmeV90eXBlcygpCmBgYAoKMi40LjEgUXVhZHJvIGRlIERhZG9zL0RhdGEgRnJhbWVzIC0gVXRpbGl6YWRvIHBhcmEgYXJtYXplbmFyIHVtIGNvbmp1bnRvIGRlIGRhZG9zIGVtIFIuCmBgYHtyfQojSW5zdGFsYW5kbyBhIGJpYmxpb3RlY2EgRFNMQUJTCmluc3RhbGwucGFja2FnZXMoImRzbGFicyIpCiNDYXJyZWdhbmRvIG8gUGFjb3RlIE1VUkRFUlMKbGlicmFyeShkc2xhYnMpCmRhdGEobXVyZGVycykKY2xhc3MobXVyZGVycykKYGBgCgoyLjQuMiBFeGFtaW5hciB1bSBvYmpldG8gLSDDiSDDunRpbCBhIGZ1bsOnw6NvIHN0cigibm9tZSIpIHBhcmEgZW50ZW5kZXIgYSBlc3RydXR1cmEgZG8gb2JqZXRvLgpgYGB7cn0KZXhhbV9tdXJkZXJzIDwtIGZ1bmN0aW9uKCkgewogIHN0cihtdXJkZXJzKQp9CmV4YW1fbXVyZGVycygpCmBgYAoKMi40LjMgVGhlIGFjY2Vzc29yL08gYWNlc3NvciAgLSBBbyBsb25nbyBkYXMgYW7DoWxpc2VzIMOpIHByZWNpc28gYWNlc3NhciBhcyB2YXJpw6F2ZWlzIG5vIGRhdGEgZnJhbWUuIEVudMOjbywgw6kgdXRpbGl6YWRvIG8gIiQiLiBQb3IgZXhlbXBsbzoKYGBge3J9CiNGdW7Dp8OjbyBwYXJhIGlkZW50aWZpY2FyIG9zIG5vbWVzIGRlIHZhcmnDoXZlaXMgcHJlc2VudGVzIG5vIGRhdGEgZnJhbWUgZSBsb2dvIGVtIHNlZ3VpZGEgYWNlc3PDoS1sYXMuCmFjZXNzX3ZhcmlhdmVpcyA8LSBmdW5jdGlvbigpIHsKICAjQ29tbyBpZGVudGlmaWNhciBhcyB2YXJpw6F2ZWlzPyBQYXJhIGlzc28sIMOpIHByZWNpc28gICB1c2FyIGEgZnVuw6fDo28gTkFNRVMoTk9NRV9ET19EQVRBRlJBTUUpCiAgbmFtZXMobXVyZGVycykKICBzdGF0IDwtIG11cmRlcnMkc3RhdGUKICBhYiA8LSBtdXJkZXJzJGFiYgogIHBvcCA8LSBtdXJkZXJzJHBvcHVsYXRpb24KICBwcmludChjKHN0YXQsIGFiLCBwb3ApKQp9CmFjZXNzX3ZhcmlhdmVpcygpCmBgYAogCjIuNC40IFZldG9yZXM6IG51bcOpcmljb3MsIGNhcmFjdGVyZXMgZSBsw7NnaWNvcyAtIE9zIHZldG9yZXMgYXJtYXplbmFtIGRpdmVyc29zIHZhbG9yZXMgc2ltdWx0w6JuZWFtZW50ZS4KUG9yIGlzc28sIGVzc2VzIHRpcG9zIGRlIG9iamV0b3Mgc8OjbyBjaGFtYWRvcyBkZSB2ZXRvcmVzLgoKw4kgcG9zc8OtdmVsIGlkZW50aWZpY2FyIGEgcXVhbnRpZGFkZSBkZSBlbnRyYWRhcyBkZSB2YWxvcmVzIHF1ZSB1bSB2ZXRvciBwb3NzdWkuIFBvciBleGVtcGxvOgpgYGB7cn0KbmFtZXMobXVyZGVycykKI051bWVyaWMgdHlwZQpsZW5ndGgobXVyZGVycyRwb3B1bGF0aW9uKQpjbGFzcyhtdXJkZXJzJHBvcHVsYXRpb24pCiNDaGFyYWN0ZXJlIHR5cGUKbGVuZ3RoKG11cmRlcnMkc3RhdGUpCmNsYXNzKG11cmRlcnMkc3RhdGUpCiNMb2dpY2FsIHR5cGUgLSBEaXZlcnNvcyB2YWxvcmVzID0gRGl2ZXJzb3MgVHJ1ZSBvciBGYWxzZQp5IDwtIG11cmRlcnMkc3RhdGUgPT0gbXVyZGVycyRwb3B1bGF0aW9uCnkKIyBMb2dpY2FsIFR5cGUgLSBVbSB2YWxvciA9IFRydWUgb3IgRmFsc2UKeCA8LSAxID09IDAKcHJpbnQoeCkKI0lkZW50aWZpY2FuZG8gbyB0aXBvIGRlIG9iamV0bwpjbGFzcyhtdXJkZXJzJHN0YXRlID09IG11cmRlcnMkYWJiKQpgYGAK</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiRGF0YSBUeXBlcyAtIEludHJvZHVjdGlvbiBEYXRhIFNjaWVuc2UiCm91dHB1dDogaHRtbF9ub3RlYm9vawotLS0KCjIuNCBEYXRhIFR5cGVzIC0gVmFyacOhdmVpcyBlbSBSIHBvZGVtIHNlciBkZSB0aXBvcyBkaWZlcmVudGVzLiBFbnTDo28sIMOpIHByY2lzbyBkaXN0aW5ndWlyIG9zIHRpcG9zLiBBc3NpbSwgdXRpbGl6YW5kbyBwb3IgZXhlbXBsbyBhIGZ1bsOnw6NvIGNsYXNzKCkgcGFyYSBkZXRlcm1pbmFyIG8gdGlwbyBkZSBvYmpldG8uCmBgYHtyfQp2ZXJpZnlfdHlwZXMgPC0gZnVuY3Rpb24oKSB7CiAgYSA8LSAxCiAgYiA8LSAwLjQKICBjIDwtIFRSVUUKICBkIDwtICJIZWxsbyBXb3JsZCEiCiAgdDEgPSBjbGFzcyhhKQogIHQyID0gY2xhc3MoYikKICB0MyA9IGNsYXNzKGMpCiAgdDQgPSBjbGFzcyhkKQogIHByaW50KGModDEsIHQyLCB0MywgdDQpKQp9CnZlcmlmeV90eXBlcygpCmBgYAoKMi40LjEgUXVhZHJvIGRlIERhZG9zL0RhdGEgRnJhbWVzIC0gVXRpbGl6YWRvIHBhcmEgYXJtYXplbmFyIHVtIGNvbmp1bnRvIGRlIGRhZG9zIGVtIFIuCmBgYHtyfQojSW5zdGFsYW5kbyBhIGJpYmxpb3RlY2EgRFNMQUJTCmluc3RhbGwucGFja2FnZXMoImRzbGFicyIpCiNDYXJyZWdhbmRvIG8gUGFjb3RlIE1VUkRFUlMKbGlicmFyeShkc2xhYnMpCmRhdGEobXVyZGVycykKY2xhc3MobXVyZGVycykKYGBgCgoyLjQuMiBFeGFtaW5hciB1bSBvYmpldG8gLSDDiSDDunRpbCBhIGZ1bsOnw6NvIHN0cigibm9tZSIpIHBhcmEgZW50ZW5kZXIgYSBlc3RydXR1cmEgZG8gb2JqZXRvLgpgYGB7cn0KZXhhbV9tdXJkZXJzIDwtIGZ1bmN0aW9uKCkgewogIHN0cihtdXJkZXJzKQp9CmV4YW1fbXVyZGVycygpCmBgYAoKMi40LjMgVGhlIGFjY2Vzc29yL08gYWNlc3NvciAgLSBBbyBsb25nbyBkYXMgYW7DoWxpc2VzIMOpIHByZWNpc28gYWNlc3NhciBhcyB2YXJpw6F2ZWlzIG5vIGRhdGEgZnJhbWUuIEVudMOjbywgw6kgdXRpbGl6YWRvIG8gIiQiLiBQb3IgZXhlbXBsbzoKYGBge3J9CiNGdW7Dp8OjbyBwYXJhIGlkZW50aWZpY2FyIG9zIG5vbWVzIGRlIHZhcmnDoXZlaXMgcHJlc2VudGVzIG5vIGRhdGEgZnJhbWUgZSBsb2dvIGVtIHNlZ3VpZGEgYWNlc3PDoS1sYXMuCmFjZXNzX3ZhcmlhdmVpcyA8LSBmdW5jdGlvbigpIHsKICAjQ29tbyBpZGVudGlmaWNhciBhcyB2YXJpw6F2ZWlzPyBQYXJhIGlzc28sIMOpIHByZWNpc28gICB1c2FyIGEgZnVuw6fDo28gTkFNRVMoTk9NRV9ET19EQVRBRlJBTUUpCiAgbmFtZXMobXVyZGVycykKICBzdGF0IDwtIG11cmRlcnMkc3RhdGUKICBhYiA8LSBtdXJkZXJzJGFiYgogIHBvcCA8LSBtdXJkZXJzJHBvcHVsYXRpb24KICBwcmludChjKHN0YXQsIGFiLCBwb3ApKQp9CmFjZXNzX3ZhcmlhdmVpcygpCmBgYAogCjIuNC40IFZldG9yZXM6IG51bcOpcmljb3MsIGNhcmFjdGVyZXMgZSBsw7NnaWNvcyAtIE9zIHZldG9yZXMgYXJtYXplbmFtIGRpdmVyc29zIHZhbG9yZXMgc2ltdWx0w6JuZWFtZW50ZS4KUG9yIGlzc28sIGVzc2VzIHRpcG9zIGRlIG9iamV0b3Mgc8OjbyBjaGFtYWRvcyBkZSB2ZXRvcmVzLgoKw4kgcG9zc8OtdmVsIGlkZW50aWZpY2FyIGEgcXVhbnRpZGFkZSBkZSBlbnRyYWRhcyBkZSB2YWxvcmVzIHF1ZSB1bSB2ZXRvciBwb3NzdWkuIFBvciBleGVtcGxvOgpgYGB7cn0KbmFtZXMobXVyZGVycykKI051bWVyaWMgdHlwZQpsZW5ndGgobXVyZGVycyRwb3B1bGF0aW9uKQpjbGFzcyhtdXJkZXJzJHBvcHVsYXRpb24pCiNDaGFyYWN0ZXJlIHR5cGUKbGVuZ3RoKG11cmRlcnMkc3RhdGUpCmNsYXNzKG11cmRlcnMkc3RhdGUpCiNMb2dpY2FsIHR5cGUgLSBEaXZlcnNvcyB2YWxvcmVzID0gRGl2ZXJzb3MgVHJ1ZSBvciBGYWxzZQp5IDwtIG11cmRlcnMkc3RhdGUgPT0gbXVyZGVycyRwb3B1bGF0aW9uCnkKIyBMb2dpY2FsIFR5cGUgLSBVbSB2YWxvciA9IFRydWUgb3IgRmFsc2UKeCA8LSAxID09IDAKcHJpbnQoeCkKI0lkZW50aWZpY2FuZG8gbyB0aXBvIGRlIG9iamV0bwpjbGFzcyhtdXJkZXJzJHN0YXRlID09IG11cmRlcnMkYWJiKQpgYGAKCjIuNC41IEZhdG9yZXMgLSBTw6NvIMO6dGVpcyBwYXJhIGFybWF6ZW5hciBkYWRvcyBjYXRlZ8Ozcmljb3MuIFBybyBleGVtcGxvOgpgYGB7cn0KcmVnaW9uIDwtIG11cmRlcnMkcmVnaW9uCnZhbHVlIDwtIG11cmRlcnMkdG90YWwKcmVnaW9uIDwtIHJlb3JkZXIocmVnaW9uLCB2YWx1ZSwgRlVOID0gc3VtKQpsZXZlbHMocmVnaW9uKQpgYGAKCjIuNC42IExpc3Rhcy9MaXN0cyAtIE9zIHF1YWRyb3MgZGUgZGFkb3Mgc8OjbyB1bSBjYXNvIGVzcGVjaWFsIGRlIGxpc3Rhcy4gQXMgbGlzdGFzIHPDo28gw7p0ZWlzIHBvcnF1ZSBwb2RlIGFybWF6ZW5hciBxdWFscXVlciBjb21iaW5hw6fDo28gZGUgZGlmZXJlbnRlcyB0aXBvcy4KYGBge3J9CnJnIDwtIGxpc3QobmFtZSA9ICJTb3VscyIsCiAgICAgICAgICAgZW1haWwgPSAiLkBnbWFpbC5oYWNrIiwKICAgICAgICAgICBudW1iZXIgPSAiMDEwMTEwMDAxMSIsCiAgICAgICAgICAgYWRyZXNzID0gIjExMjMxNDUyNTIwMDQ2OTQ3MyIpCnJnJG5hbWUKcmckbnVtYmVyCnJnJGVtYWlsCnJnJGFkcmVzcwpwcmludChyZykKYGBgCgoK</div>
 
 
 

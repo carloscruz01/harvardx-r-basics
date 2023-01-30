@@ -72,3 +72,26 @@ print(x)
 #Identificando o tipo de objeto
 class(murders$state == murders$abb)
 ```
+
+2.4.5 Fatores - São úteis para armazenar dados categóricos. Pro exemplo:
+```{r}
+region <- murders$region
+value <- murders$total
+region <- reorder(region, value, FUN = sum)
+levels(region)
+```
+
+2.4.6 Listas/Lists - Os quadros de dados são um caso especial de listas. As listas são úteis porque pode armazenar qualquer combinação de diferentes tipos.
+```{r}
+rg <- list(name = "Souls",
+           email = ".@gmail.hack",
+           number = "0101100011",
+           adress = "112314525200469473")
+rg$name
+rg$number
+rg$email
+rg$adress
+print(rg)
+```
+
+
