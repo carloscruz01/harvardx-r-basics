@@ -37,3 +37,38 @@ exam_murders <- function() {
 exam_murders()
 ```
 
+2.4.3 The accessor/O acessor  - Ao longo das análises é preciso acessar as variáveis no data frame. Então, é utilizado o "$". Por exemplo:
+```{r}
+#Função para identificar os nomes de variáveis presentes no data frame e logo em seguida acessá-las.
+acess_variaveis <- function() {
+  #Como identificar as variáveis? Para isso, é preciso   usar a função NAMES(NOME_DO_DATAFRAME)
+  names(murders)
+  stat <- murders$state
+  ab <- murders$abb
+  pop <- murders$population
+  print(c(stat, ab, pop))
+}
+acess_variaveis()
+```
+ 
+2.4.4 Vetores: numéricos, caracteres e lógicos - Os vetores armazenam diversos valores simultâneamente.
+Por isso, esses tipos de objetos são chamados de vetores.
+
+É possível identificar a quantidade de entradas de valores que um vetor possui. Por exemplo:
+```{r}
+names(murders)
+#Numeric type
+length(murders$population)
+class(murders$population)
+#Charactere type
+length(murders$state)
+class(murders$state)
+#Logical type - Diversos valores = Diversos True or False
+y <- murders$state == murders$population
+y
+# Logical Type - Um valor = True or False
+x <- 1 == 0
+print(x)
+#Identificando o tipo de objeto
+class(murders$state == murders$abb)
+```
