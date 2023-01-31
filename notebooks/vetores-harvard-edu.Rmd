@@ -1,0 +1,20 @@
+---
+title: "2.6 - Vetores - harvard.edu"
+output: html_notebook
+---
+
+2.6 Vetores - Conujuntos de dados complexos geralmnete podem ser divididos em componentes que são vetores.
+```{r}
+msg <- c("Hello World!", 'Live long and prosper')
+msg
+n <- c(0, 1, 0, 1, 1, 0, 0, 0)
+n
+```
+
+2.6.2 Nomes - É possível nomear as entradas de vetores. Assim, às vezes pode ajudar.
+```{r}
+places <- c('rio de janeiro' = 0, 'vale do silicio' = 1, 'espaco' = 2)
+places
+names(places)
+```
+
