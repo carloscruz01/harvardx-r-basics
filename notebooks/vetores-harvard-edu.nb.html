@@ -1778,9 +1778,44 @@ vezes pode ajudar.</p>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+<p>2.6.3 Sequências - É uma função utilizada para obter sequências.</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2VxKDEsIDIwKVxuYGBgIn0= -->
+<pre class="r"><code>seq(1, 20)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>Dentro dos parênteses o primeiro e segundo argumento caracterizam o
+começo e fim. E, é possível colorcar um terceiro argumento que é
+utilizado para pular.</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2VxKDEsIDIwLCAyKVxuXG5gYGAifQ== -->
+<pre class="r"><code>seq(1, 20, 2)
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiIFsxXSAgMSAgMyAgNSAgNyAgOSAxMSAxMyAxNSAxNyAxOVxuIn0= -->
+<pre><code> [1]  1  3  5  7  9 11 13 15 17 19</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>2.6.4 Subsettings - É a utilização de colchetes para acessar
+elementos específicos de um vetor.</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY2l0eXNbMjozXVxuXG5gYGAifQ== -->
+<pre class="r"><code>citys[2:3]
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiWzFdIFwib3hmb3JkXCIgICAgXCJjYW1icmlkZ2VcIlxuIn0= -->
+<pre><code>[1] &quot;oxford&quot;    &quot;cambridge&quot;</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tCnRpdGxlOiAiMi42IC0gVmV0b3JlcyAtIGhhcnZhcmQuZWR1IgpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sKLS0tCgoyLjYgVmV0b3JlcyAtIENvbnVqdW50b3MgZGUgZGFkb3MgY29tcGxleG9zIGdlcmFsbW5ldGUgcG9kZW0gc2VyIGRpdmlkaWRvcyBlbSBjb21wb25lbnRlcyBxdWUgc8OjbyB2ZXRvcmVzLgpgYGB7cn0KbXNnIDwtIGMoIkhlbGxvIFdvcmxkISIsICdMaXZlIGxvbmcgYW5kIHByb3NwZXInKQptc2cKbiA8LSBjKDAsIDEsIDAsIDEsIDEsIDAsIDAsIDApCm4KYGBgCgoyLjYuMiBOb21lcyAtIMOJIHBvc3PDrXZlbCBub21lYXIgYXMgZW50cmFkYXMgZGUgdmV0b3Jlcy4gQXNzaW0sIMOgcyB2ZXplcyBwb2RlIGFqdWRhci4KYGBge3J9CnBsYWNlcyA8LSBjKCdyaW8gZGUgamFuZWlybycgPSAwLCAndmFsZSBkbyBzaWxpY2lvJyA9IDEsICdlc3BhY28nID0gMikKcGxhY2VzCm5hbWVzKHBsYWNlcykKYGBgCgo=</div>
+<div id="rmd-source-code">LS0tCnRpdGxlOiAiMi42IC0gVmV0b3JlcyAtIGhhcnZhcmQuZWR1IgpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sKLS0tCgoyLjYgVmV0b3JlcyAtIENvbnVqdW50b3MgZGUgZGFkb3MgY29tcGxleG9zIGdlcmFsbW5ldGUgcG9kZW0gc2VyIGRpdmlkaWRvcyBlbSBjb21wb25lbnRlcyBxdWUgc8OjbyB2ZXRvcmVzLgpgYGB7cn0KbXNnIDwtIGMoIkhlbGxvIFdvcmxkISIsICdMaXZlIGxvbmcgYW5kIHByb3NwZXInKQptc2cKbiA8LSBjKDAsIDEsIDAsIDEsIDEsIDAsIDAsIDApCm4KYGBgCgoyLjYuMiBOb21lcyAtIMOJIHBvc3PDrXZlbCBub21lYXIgYXMgZW50cmFkYXMgZGUgdmV0b3Jlcy4gQXNzaW0sIMOgcyB2ZXplcyBwb2RlIGFqdWRhci4KYGBge3J9CnBsYWNlcyA8LSBjKCdyaW8gZGUgamFuZWlybycgPSAwLCAndmFsZSBkbyBzaWxpY2lvJyA9IDEsICdlc3BhY28nID0gMikKcGxhY2VzCm5hbWVzKHBsYWNlcykKYGBgCgoyLjYuMyBTZXF1w6puY2lhcyAtIMOJIHVtYSBmdW7Dp8OjbyB1dGlsaXphZGEgcGFyYSBvYnRlciBzZXF1w6puY2lhcy4KYGBge3J9CnNlcSgxLCAyMCkKYGBgCkRlbnRybyBkb3MgcGFyw6pudGVzZXMgbyBwcmltZWlybyBlIHNlZ3VuZG8gYXJndW1lbnRvIGNhcmFjdGVyaXphbSBvIGNvbWXDp28gZSBmaW0uIEUsIMOpIHBvc3PDrXZlbCBjb2xvcmNhciB1bSB0ZXJjZWlybyBhcmd1bWVudG8gcXVlIMOpIHV0aWxpemFkbyBwYXJhIHB1bGFyLgpgYGB7cn0Kc2VxKDEsIDIwLCAyKQpgYGAKCjIuNi40IFN1YnNldHRpbmdzIC0gw4kgYSB1dGlsaXphw6fDo28gZGUgY29sY2hldGVzIHBhcmEgYWNlc3NhciBlbGVtZW50b3MgZXNwZWPDrWZpY29zIGRlIHVtIHZldG9yLgpgYGB7cn0KY2l0eXMgPC0gYygnTmV3IFlvcmsnLCAnb3hmb3JkJywgJ2NhbWJyaWRnZScpCmNpdHlzWzFdCmNpdHlzW2MoMSwzKV0KY2l0eXNbMjozXQpgYGAKCg==</div>
 
 
 
